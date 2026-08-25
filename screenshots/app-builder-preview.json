@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Future Biotech Expo",
+      "hasCanvas": false,
+      "bodyTextLen": 4110,
+      "bodyTextHash": "18b3545f5164ccfa4fe30113c3c3e92e42f04b25471c874732b0ea8570d43aa2",
+      "bodyTextPrefix": "Future Biotech Expo PHILADELPHIA 2027 Book a meeting Get your pa",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Future Biotech Expo",
+      "hasCanvas": false,
+      "bodyTextLen": 4029,
+      "bodyTextHash": "c85d4c89806e12000c207f547ce350f64ec03af86c8ea6e77e353416a3c70587",
+      "bodyTextPrefix": "Future Biotech Expo PHILADELPHIA 2027 RED BIOTECHNOLOGY Future B",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

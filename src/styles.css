@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", "Times New Roman", Georgia, serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #e23940;
+  --color-primary-dark: #c12a32;
+  --color-plum: #5a1f55;
+  --color-plum-deep: #2c0a3d;
+  --color-accent: #ffa94c;
+  --color-accent-hover: #ff9800;
+  --color-bg: #fbf7f3;
+  --color-paper: #eadfd9;
+  --color-surface: #ffffff;
+  --color-ink: #1a0a12;
+  --color-muted: #5b4a52;
+  --color-subtle: #8a7a82;
+  --color-line: #e2d4d0;
+  --color-on-primary: #ffffff;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+
+  --shadow-border:
+    0 0 0 1px rgb(26 10 18 / 0.06),
+    0 1px 2px -1px rgb(26 10 18 / 0.06),
+    0 2px 4px 0 rgb(26 10 18 / 0.04);
+  --shadow-border-hover:
+    0 0 0 1px rgb(26 10 18 / 0.08),
+    0 1px 2px -1px rgb(26 10 18 / 0.08),
+    0 2px 4px 0 rgb(26 10 18 / 0.06);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .hero-wash {
+    background: linear-gradient(115deg, var(--color-primary) 0%, var(--color-plum) 72%, var(--color-plum-deep) 100%);
+  }
+
+  .hairline {
+    box-shadow: var(--shadow-border);
+  }
+
+  .hairline:hover {
+    box-shadow: var(--shadow-border-hover);
+  }
+
+  .hashtag-stroke {
+    -webkit-text-stroke: 1px var(--color-on-primary);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .motion-safe-only {
+    animation: none !important;
+    transition: none !important;
+  }
+}
